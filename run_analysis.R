@@ -6,10 +6,10 @@ fileName <- "./data/UCI_HAR_Dataset.zip"
 if (!file.exists("./data")) {
     dir.create("./data")
 }
-#------>>> download.file(fileURL, fileName)
+download.file(fileURL, fileName)
 
 # Unzip the dataset
-#------>>> unzip("./data/UCI_HAR_Dataset.zip", exdir = "./data")
+unzip("./data/UCI_HAR_Dataset.zip", exdir = "./data")
 
 #------------------------------------------------------------------------------#
 # Merge the training and the test sets to create one data set.
